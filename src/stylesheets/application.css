@@ -1,7 +1,72 @@
-@import url('~normalize.css/normalize.css');
+@import url('~bootstrap/dist/css/bootstrap.css');
 
-* {
-  box-sizing: border-box;
-}
 
 /* TODO */
+
+body {
+  background-color: rgb(27, 27, 27);
+  color: white;
+}
+
+.jumbotron {
+  background: url(https://images.unsplash.com/photo-1520870121499-7dddb6ccbcde?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80);
+  background-position: 0 -300px;
+}
+
+footer {
+  font-size: .5rem;
+  padding-top: 15px;
+}
+
+main {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+}
+
+.thumbnail {
+  margin: 5px;
+
+}
+
+.thumbnail img {
+  width: 100%;
+  height: auto;
+}
+
+.gallery .featured {
+  grid-area: 1 / 1/ span 4 / span 6;
+}
+
+.featured img {
+  width: 40%;
+  margin-right: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media only screen and (max-width:575px){
+  .desktop{
+    display: none;
+  }
+
+  .gallery .featured {
+    grid-area: 1 / 1/ span 1 / span 9;
+  }
+}
+
+.sam {
+
+  background-color: rgb(27, 27, 27);
+}
+
+.card {
+  margin-top: 40px;
+  color: black;
+}
